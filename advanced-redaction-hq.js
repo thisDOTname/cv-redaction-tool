@@ -1,18 +1,3 @@
-/* Copyright 2017 Mozilla Foundation
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 const Canvas = require("canvas");
 const assert = require("assert").strict;
 const fs = require("fs");
@@ -24,10 +9,6 @@ const rekognitionData = require('./assets/rekognition.json');
 const personalInfo = ['PRIYANGIKA DHARANI', 'SUBRAMANIAM', 'dharanips.23@gmail.com', 'Sri Lanka', 'Nev Zealand', 'Australia', 'Analysis', 'Srilanka', 'perth'];
 
 let pageCount = 0
-
-
-// console.log('> rekognitionData : ', rekognitionData.Labels);
-
 let personRekognitionData = rekognitionData.Labels.filter(label => label.Name === 'Person');
 
 if (personRekognitionData.length) {
@@ -215,36 +196,6 @@ function imageToPdf(imageBuffer) {
         );  
       }
     }
-
-    /* childs.forEach(c => {
-      if (c[0].Text) {
-      personalInfo.forEach(pi => {
-          if (c[0].Text.toLowerCase().includes(pi.toLowerCase())) {
-              ctx.beginPath();
-              ctx.fillStyle = "#333";
-              ctx.font = "bold 20px Verdana";
-              ctx.textAlign = "center";
-              ctx.textBaseAlign = "middle";
-              let redactedText = c[0].Text;
-
-              personalInfo.forEach(p => {
-                  redactedText = redactedText.toLowerCase().replace(p.toLowerCase(), ' ☒☒☒☒☒☒ ');
-              });
-
-              console.log('> ctx.measureText(redactedText).width : ', ctx.measureText(redactedText).width);
-              console.log('> width : ', (c[0].Geometry.BoundingBox.Width * canvasAndContext.canvas.width));
-              console.log('> computed : ', (((c[0].Geometry.BoundingBox.Width * canvasAndContext.canvas.width)- ctx.measureText(redactedText).width)/2));
-              
-              ctx.fillText(
-                  redactedText,
-                  ((c[0].Geometry.BoundingBox.Left * canvasAndContext.canvas.width) + ((c[0].Geometry.BoundingBox.Width * canvasAndContext.canvas.width)/2) - (((c[0].Geometry.BoundingBox.Width * canvasAndContext.canvas.width)- ctx.measureText(redactedText).width)/2)+10),
-                  ((c[0].Geometry.BoundingBox.Top * canvasAndContext.canvas.height) + ((c[0].Geometry.BoundingBox.Height * canvasAndContext.canvas.height)/2)+5),
-                  (c[0].Geometry.BoundingBox.Width * canvasAndContext.canvas.width)
-              );            
-          }
-      });
-      }
-  }); */
 
     canvasAndContext.canvas.toBuffer() // returns a PDF file
     canvasAndContext.canvas.createPDFStream() // returns a ReadableStream that emits a PDF

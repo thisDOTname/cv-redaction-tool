@@ -1,0 +1,226 @@
+{
+    "Labels": [
+        {
+            "Name": "Page",
+            "Confidence": 99.99750518798828,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Text"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Text and Documents"
+                }
+            ]
+        },
+        {
+            "Name": "Text",
+            "Confidence": 99.99750518798828,
+            "Instances": [],
+            "Parents": [],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Text and Documents"
+                }
+            ]
+        },
+        {
+            "Name": "Poster",
+            "Confidence": 99.53307342529297,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Advertisement"
+                }
+            ],
+            "Aliases": [
+                {
+                    "Name": "Brochure"
+                },
+                {
+                    "Name": "Flyer"
+                }
+            ],
+            "Categories": [
+                {
+                    "Name": "Furniture and Furnishings"
+                }
+            ]
+        },
+        {
+            "Name": "Advertisement",
+            "Confidence": 99.53307342529297,
+            "Instances": [],
+            "Parents": [],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Text and Documents"
+                }
+            ]
+        },
+        {
+            "Name": "Person",
+            "Confidence": 98.62338256835938,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.17829419672489166,
+                        "Height": 0.16229170560836792,
+                        "Left": 0.1709643304347992,
+                        "Top": 0.04844595491886139
+                    },
+                    "Confidence": 98.62338256835938
+                }
+            ],
+            "Parents": [],
+            "Aliases": [
+                {
+                    "Name": "Human"
+                }
+            ],
+            "Categories": [
+                {
+                    "Name": "Person Description"
+                }
+            ]
+        },
+        {
+            "Name": "Child",
+            "Confidence": 98.62338256835938,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.17829419672489166,
+                        "Height": 0.16229170560836792,
+                        "Left": 0.1709643304347992,
+                        "Top": 0.04844595491886139
+                    },
+                    "Confidence": 98.62338256835938
+                }
+            ],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ],
+            "Aliases": [
+                {
+                    "Name": "Kid"
+                }
+            ],
+            "Categories": [
+                {
+                    "Name": "Person Description"
+                }
+            ]
+        },
+        {
+            "Name": "Girl",
+            "Confidence": 98.62338256835938,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.17829419672489166,
+                        "Height": 0.16229170560836792,
+                        "Left": 0.1709643304347992,
+                        "Top": 0.04844595491886139
+                    },
+                    "Confidence": 98.62338256835938
+                }
+            ],
+            "Parents": [
+                {
+                    "Name": "Female"
+                },
+                {
+                    "Name": "Person"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Person Description"
+                }
+            ]
+        },
+        {
+            "Name": "Female",
+            "Confidence": 98.62338256835938,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.17829419672489166,
+                        "Height": 0.16229170560836792,
+                        "Left": 0.1709643304347992,
+                        "Top": 0.04844595491886139
+                    },
+                    "Confidence": 98.62338256835938
+                }
+            ],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Person Description"
+                }
+            ]
+        },
+        {
+            "Name": "Face",
+            "Confidence": 89.37139892578125,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Head"
+                },
+                {
+                    "Name": "Person"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Person Description"
+                }
+            ]
+        },
+        {
+            "Name": "Head",
+            "Confidence": 89.37139892578125,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Person Description"
+                }
+            ]
+        },
+        {
+            "Name": "File",
+            "Confidence": 57.149471282958984,
+            "Instances": [],
+            "Parents": [],
+            "Aliases": [],
+            "Categories": [
+                {
+                    "Name": "Text and Documents"
+                }
+            ]
+        }
+    ],
+    "LabelModelVersion": "3.0"
+}
